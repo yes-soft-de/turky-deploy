@@ -1790,6 +1790,12 @@ const SIDEBAR_MENU_ITEM = [
         translate: 'chats',
         icon: 'fa fa-comments',
         link: '/chats'
+    },
+    {
+        title: 'Services',
+        translate: 'services',
+        icon: 'fa fa-cogs',
+        link: '/services'
     }
 ];
 

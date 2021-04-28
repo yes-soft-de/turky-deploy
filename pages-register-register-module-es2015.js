@@ -43,6 +43,9 @@ AdminConfig.deleteReportAPI = AdminConfig.sourceAPI + 'deletereport';
 AdminConfig.chatsAPI = AdminConfig.sourceAPI + 'getallchat';
 // Statistics
 AdminConfig.statisticsAPI = AdminConfig.sourceAPI + 'statistics';
+// Services
+AdminConfig.allServicesAPI = AdminConfig.sourceAPI + 'allservices';
+AdminConfig.servicesAPI = AdminConfig.sourceAPI + 'services';
 // Upload
 AdminConfig.generalUploadAPI = AdminConfig.sourceAPI + 'uploadfile';
 

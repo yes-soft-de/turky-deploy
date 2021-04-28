@@ -14,7 +14,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~05a08ca5"], {
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"], {
   /***/
   "./node_modules/@ngrx/entity/__ivy_ngcc__/fesm2015/ngrx-entity.js":
   /*!************************************************************************!*\
@@ -1284,10 +1284,13 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
     AdminConfig.chatsAPI = AdminConfig.sourceAPI + 'getallchat'; // Statistics
 
-    AdminConfig.statisticsAPI = AdminConfig.sourceAPI + 'statistics'; // Upload
+    AdminConfig.statisticsAPI = AdminConfig.sourceAPI + 'statistics'; // Services
+
+    AdminConfig.allServicesAPI = AdminConfig.sourceAPI + 'allservices';
+    AdminConfig.servicesAPI = AdminConfig.sourceAPI + 'services'; // Upload
 
     AdminConfig.generalUploadAPI = AdminConfig.sourceAPI + 'uploadfile';
     /***/
   }
 }]);
-//# sourceMappingURL=default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~05a08ca5-es5.js.map
+//# sourceMappingURL=default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26-es5.js.map

@@ -106,32 +106,37 @@ const routes = [
             },
             {
                 path: 'products',
-                loadChildren: () => Promise.all(/*! import() | products-products-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~05a08ca5"), __webpack_require__.e("products-products-module")]).then(__webpack_require__.bind(null, /*! ./products/products.module */ "./src/app/pages/products/products.module.ts")).then(m => m.ProductsModule),
+                loadChildren: () => Promise.all(/*! import() | products-products-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("products-products-module")]).then(__webpack_require__.bind(null, /*! ./products/products.module */ "./src/app/pages/products/products.module.ts")).then(m => m.ProductsModule),
                 canActivate: [_admin_service_guard_after_login_service__WEBPACK_IMPORTED_MODULE_3__["AfterLoginService"]]
             },
             {
                 path: 'cars',
-                loadChildren: () => Promise.all(/*! import() | cars-cars-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~05a08ca5"), __webpack_require__.e("cars-cars-module")]).then(__webpack_require__.bind(null, /*! ./cars/cars.module */ "./src/app/pages/cars/cars.module.ts")).then(m => m.CarsModule),
+                loadChildren: () => Promise.all(/*! import() | cars-cars-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("cars-cars-module")]).then(__webpack_require__.bind(null, /*! ./cars/cars.module */ "./src/app/pages/cars/cars.module.ts")).then(m => m.CarsModule),
                 canActivate: [_admin_service_guard_after_login_service__WEBPACK_IMPORTED_MODULE_3__["AfterLoginService"]]
             },
             {
                 path: 'devices',
-                loadChildren: () => Promise.all(/*! import() | devices-devices-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~05a08ca5"), __webpack_require__.e("devices-devices-module")]).then(__webpack_require__.bind(null, /*! ./devices/devices.module */ "./src/app/pages/devices/devices.module.ts")).then(m => m.DevicesModule),
+                loadChildren: () => Promise.all(/*! import() | devices-devices-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("devices-devices-module")]).then(__webpack_require__.bind(null, /*! ./devices/devices.module */ "./src/app/pages/devices/devices.module.ts")).then(m => m.DevicesModule),
                 canActivate: [_admin_service_guard_after_login_service__WEBPACK_IMPORTED_MODULE_3__["AfterLoginService"]]
             },
             {
                 path: 'real-estate',
-                loadChildren: () => Promise.all(/*! import() | real-estate-real-estate-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~05a08ca5"), __webpack_require__.e("real-estate-real-estate-module")]).then(__webpack_require__.bind(null, /*! ./real-estate/real-estate.module */ "./src/app/pages/real-estate/real-estate.module.ts")).then(m => m.RealEstateModule),
+                loadChildren: () => Promise.all(/*! import() | real-estate-real-estate-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("real-estate-real-estate-module")]).then(__webpack_require__.bind(null, /*! ./real-estate/real-estate.module */ "./src/app/pages/real-estate/real-estate.module.ts")).then(m => m.RealEstateModule),
                 canActivate: [_admin_service_guard_after_login_service__WEBPACK_IMPORTED_MODULE_3__["AfterLoginService"]]
             },
             {
                 path: 'reports',
-                loadChildren: () => Promise.all(/*! import() | reports-reports-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~05a08ca5"), __webpack_require__.e("reports-reports-module")]).then(__webpack_require__.bind(null, /*! ./reports/reports.module */ "./src/app/pages/reports/reports.module.ts")).then(m => m.ReportsModule),
+                loadChildren: () => Promise.all(/*! import() | reports-reports-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("reports-reports-module")]).then(__webpack_require__.bind(null, /*! ./reports/reports.module */ "./src/app/pages/reports/reports.module.ts")).then(m => m.ReportsModule),
                 canActivate: [_admin_service_guard_after_login_service__WEBPACK_IMPORTED_MODULE_3__["AfterLoginService"]]
             },
             {
                 path: 'chats',
-                loadChildren: () => Promise.all(/*! import() | chats-chats-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~05a08ca5"), __webpack_require__.e("chats-chats-module")]).then(__webpack_require__.bind(null, /*! ./chats/chats.module */ "./src/app/pages/chats/chats.module.ts")).then(m => m.ChatsModule),
+                loadChildren: () => Promise.all(/*! import() | chats-chats-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("chats-chats-module")]).then(__webpack_require__.bind(null, /*! ./chats/chats.module */ "./src/app/pages/chats/chats.module.ts")).then(m => m.ChatsModule),
+                canActivate: [_admin_service_guard_after_login_service__WEBPACK_IMPORTED_MODULE_3__["AfterLoginService"]]
+            },
+            {
+                path: 'services',
+                loadChildren: () => Promise.all(/*! import() | services-services-module */[__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("services-services-module")]).then(__webpack_require__.bind(null, /*! ./services/services.module */ "./src/app/pages/services/services.module.ts")).then(m => m.ServicesModule),
                 canActivate: [_admin_service_guard_after_login_service__WEBPACK_IMPORTED_MODULE_3__["AfterLoginService"]]
             },
             { path: '**', component: _theme_components__WEBPACK_IMPORTED_MODULE_2__["NotFoundComponent"] }

@@ -63,7 +63,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     AdminConfig.chatsAPI = AdminConfig.sourceAPI + 'getallchat'; // Statistics
 
-    AdminConfig.statisticsAPI = AdminConfig.sourceAPI + 'statistics'; // Upload
+    AdminConfig.statisticsAPI = AdminConfig.sourceAPI + 'statistics'; // Services
+
+    AdminConfig.allServicesAPI = AdminConfig.sourceAPI + 'allservices';
+    AdminConfig.servicesAPI = AdminConfig.sourceAPI + 'services'; // Upload
 
     AdminConfig.generalUploadAPI = AdminConfig.sourceAPI + 'uploadfile';
     /***/

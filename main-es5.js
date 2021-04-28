@@ -3301,6 +3301,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       translate: 'chats',
       icon: 'fa fa-comments',
       link: '/chats'
+    }, {
+      title: 'Services',
+      translate: 'services',
+      icon: 'fa fa-cogs',
+      link: '/services'
     }];
     /***/
   },
