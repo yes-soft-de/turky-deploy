@@ -1794,7 +1794,7 @@ const SIDEBAR_MENU_ITEM = [
     {
         title: 'Services',
         translate: 'services',
-        icon: 'fa fa-cogs',
+        icon: 'fa fa-audio-description',
         link: '/services'
     }
 ];
