@@ -1755,7 +1755,7 @@ const SIDEBAR_MENU_ITEM = [
         title: 'Products',
         id: 'products',
         translate: 'products',
-        icon: 'fa fa-tags',
+        icon: 'fa fa-cubes',
         children: [
             {
                 title: 'All Products',
@@ -1777,6 +1777,24 @@ const SIDEBAR_MENU_ITEM = [
                 translate: 'all-real-estate',
                 link: '/real-estate',
             },
+        ]
+    },
+    {
+        title: 'Categories',
+        id: 'categories',
+        translate: 'categories',
+        icon: 'fa fa-tags',
+        children: [
+            {
+                title: 'All Categories',
+                translate: 'all-categories',
+                link: '/categories',
+            },
+            {
+                title: 'New Category',
+                translate: 'new-category',
+                link: '/categories/add',
+            }
         ]
     },
     {

@@ -223,7 +223,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         loadChildren: function loadChildren() {
           return Promise.all(
           /*! import() | products-products-module */
-          [__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("products-products-module")]).then(__webpack_require__.bind(null,
+          [__webpack_require__.e("default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd"), __webpack_require__.e("products-products-module")]).then(__webpack_require__.bind(null,
           /*! ./products/products.module */
           "./src/app/pages/products/products.module.ts")).then(function (m) {
             return m.ProductsModule;
@@ -235,7 +235,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         loadChildren: function loadChildren() {
           return Promise.all(
           /*! import() | cars-cars-module */
-          [__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("cars-cars-module")]).then(__webpack_require__.bind(null,
+          [__webpack_require__.e("default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd"), __webpack_require__.e("cars-cars-module")]).then(__webpack_require__.bind(null,
           /*! ./cars/cars.module */
           "./src/app/pages/cars/cars.module.ts")).then(function (m) {
             return m.CarsModule;
@@ -247,7 +247,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         loadChildren: function loadChildren() {
           return Promise.all(
           /*! import() | devices-devices-module */
-          [__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("devices-devices-module")]).then(__webpack_require__.bind(null,
+          [__webpack_require__.e("default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd"), __webpack_require__.e("devices-devices-module")]).then(__webpack_require__.bind(null,
           /*! ./devices/devices.module */
           "./src/app/pages/devices/devices.module.ts")).then(function (m) {
             return m.DevicesModule;
@@ -259,7 +259,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         loadChildren: function loadChildren() {
           return Promise.all(
           /*! import() | real-estate-real-estate-module */
-          [__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("real-estate-real-estate-module")]).then(__webpack_require__.bind(null,
+          [__webpack_require__.e("default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd"), __webpack_require__.e("real-estate-real-estate-module")]).then(__webpack_require__.bind(null,
           /*! ./real-estate/real-estate.module */
           "./src/app/pages/real-estate/real-estate.module.ts")).then(function (m) {
             return m.RealEstateModule;
@@ -271,7 +271,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         loadChildren: function loadChildren() {
           return Promise.all(
           /*! import() | reports-reports-module */
-          [__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("reports-reports-module")]).then(__webpack_require__.bind(null,
+          [__webpack_require__.e("default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd"), __webpack_require__.e("reports-reports-module")]).then(__webpack_require__.bind(null,
           /*! ./reports/reports.module */
           "./src/app/pages/reports/reports.module.ts")).then(function (m) {
             return m.ReportsModule;
@@ -283,7 +283,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         loadChildren: function loadChildren() {
           return Promise.all(
           /*! import() | chats-chats-module */
-          [__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("chats-chats-module")]).then(__webpack_require__.bind(null,
+          [__webpack_require__.e("default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd"), __webpack_require__.e("chats-chats-module")]).then(__webpack_require__.bind(null,
           /*! ./chats/chats.module */
           "./src/app/pages/chats/chats.module.ts")).then(function (m) {
             return m.ChatsModule;
@@ -295,10 +295,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         loadChildren: function loadChildren() {
           return Promise.all(
           /*! import() | services-services-module */
-          [__webpack_require__.e("default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"), __webpack_require__.e("services-services-module")]).then(__webpack_require__.bind(null,
+          [__webpack_require__.e("default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd"), __webpack_require__.e("services-services-module")]).then(__webpack_require__.bind(null,
           /*! ./services/services.module */
           "./src/app/pages/services/services.module.ts")).then(function (m) {
             return m.ServicesModule;
+          });
+        },
+        canActivate: [_admin_service_guard_after_login_service__WEBPACK_IMPORTED_MODULE_3__["AfterLoginService"]]
+      }, {
+        path: 'categories',
+        loadChildren: function loadChildren() {
+          return Promise.all(
+          /*! import() | categories-categories-module */
+          [__webpack_require__.e("default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd"), __webpack_require__.e("categories-categories-module")]).then(__webpack_require__.bind(null,
+          /*! ./categories/categories.module */
+          "./src/app/pages/categories/categories.module.ts")).then(function (m) {
+            return m.CategoriesModule;
           });
         },
         canActivate: [_admin_service_guard_after_login_service__WEBPACK_IMPORTED_MODULE_3__["AfterLoginService"]]

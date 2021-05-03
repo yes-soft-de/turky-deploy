@@ -3273,7 +3273,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       title: 'Products',
       id: 'products',
       translate: 'products',
-      icon: 'fa fa-tags',
+      icon: 'fa fa-cubes',
       children: [{
         title: 'All Products',
         translate: 'all-products',
@@ -3290,6 +3290,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         title: 'All Real Estate',
         translate: 'all-real-estate',
         link: '/real-estate'
+      }]
+    }, {
+      title: 'Categories',
+      id: 'categories',
+      translate: 'categories',
+      icon: 'fa fa-tags',
+      children: [{
+        title: 'All Categories',
+        translate: 'all-categories',
+        link: '/categories'
+      }, {
+        title: 'New Category',
+        translate: 'new-category',
+        link: '/categories/add'
       }]
     }, {
       title: 'Reports',

@@ -14,7 +14,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26"], {
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd"], {
   /***/
   "./node_modules/@ngrx/entity/__ivy_ngcc__/fesm2015/ngrx-entity.js":
   /*!************************************************************************!*\
@@ -1287,10 +1287,13 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     AdminConfig.statisticsAPI = AdminConfig.sourceAPI + 'statistics'; // Services
 
     AdminConfig.allServicesAPI = AdminConfig.sourceAPI + 'allservices';
-    AdminConfig.servicesAPI = AdminConfig.sourceAPI + 'services'; // Upload
+    AdminConfig.servicesAPI = AdminConfig.sourceAPI + 'services'; // Categories
+
+    AdminConfig.categoriesAPI = AdminConfig.sourceAPI + 'categories';
+    AdminConfig.categoryAPI = AdminConfig.sourceAPI + 'category'; // Upload
 
     AdminConfig.generalUploadAPI = AdminConfig.sourceAPI + 'uploadfile';
     /***/
   }
 }]);
-//# sourceMappingURL=default~cars-cars-module~chats-chats-module~devices-devices-module~products-products-module~real-est~9ed43a26-es5.js.map
+//# sourceMappingURL=default~cars-cars-module~categories-categories-module~chats-chats-module~devices-devices-module~prod~36d02cfd-es5.js.map

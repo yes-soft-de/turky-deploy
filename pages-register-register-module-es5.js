@@ -66,7 +66,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AdminConfig.statisticsAPI = AdminConfig.sourceAPI + 'statistics'; // Services
 
     AdminConfig.allServicesAPI = AdminConfig.sourceAPI + 'allservices';
-    AdminConfig.servicesAPI = AdminConfig.sourceAPI + 'services'; // Upload
+    AdminConfig.servicesAPI = AdminConfig.sourceAPI + 'services'; // Categories
+
+    AdminConfig.categoriesAPI = AdminConfig.sourceAPI + 'categories';
+    AdminConfig.categoryAPI = AdminConfig.sourceAPI + 'category'; // Upload
 
     AdminConfig.generalUploadAPI = AdminConfig.sourceAPI + 'uploadfile';
     /***/
