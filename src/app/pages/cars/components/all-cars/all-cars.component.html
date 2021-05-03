@@ -26,26 +26,28 @@
             <table class="table table-bordered main-table">
                 <tr class="bg-dark text-white">
                     <td>{{'image' | translate}}</td>
-                    <td>{{'brand' | translate}}</td>
-                    <td>{{'company' | translate}}</td>
-                    <td>{{'engine' | translate}}</td>
+                    <td>{{'carType' | translate}}</td>
+                    <td>{{'country' | translate}}</td>
+                    <td>{{'city' | translate}}</td>
+                    <td>{{'description' | translate}}</td>
                     <td>{{'price' | translate}}</td>
                     <td>{{'gearType' | translate}}</td>
-                    <td>{{'country' | translate}}</td>
-                    <td>{{'carType' | translate}}</td>
-                    <td>{{'yearOfRelease' | translate}}</td>
+                    <td>{{'status' | translate}}</td>
+                    <td>{{'yearOfProduction' | translate}}</td>
+                    <td>{{'createdAt' | translate}}</td>
                     <td>{{'control' | translate}}</td>
                 </tr>
                 <tr *ngFor="let car of carsFilterList | paginate: config">
                   <td><img src="{{car?.image}}" alt="{{car.brand}} Image" class="img-thumbnail img-custom"></td>
-                  <td>{{car.brand ? car.brand : '-'}}</td>
-                  <td>{{car.company ? car.company : '-'}}</td>
-                  <td>{{car.engine ? car.engine : '-'}}</td>
-                  <td>{{car.price ? (car.price | currency) : '-'}}</td>
-                  <td>{{car.gearType ? car.gearType : '-'}}</td>
-                  <td>{{car.country ? car.country : '-'}}</td>
-                  <td>{{car.carType ? car.carType : '-'}}</td>
-                  <td style="white-space: nowrap;">{{car.yearOfRelease.timestamp * 1000 | date: 'yyyy-MM-dd'}}</td>
+                  <td>{{car?.carType ? car?.carType : '-'}}</td>
+                  <td>{{car?.country ? car?.country : '-'}}</td>
+                  <td>{{car?.city ? car?.city : '-'}}</td>
+                  <td class="td-custom">{{car?.description ? car?.description : '-'}}</td>
+                  <td>{{car?.price ? (car?.price | currency) : '-'}}</td>
+                  <td>{{car?.gearType ? car?.gearType : '-'}}</td>
+                  <td>{{car?.status ? car?.status : '-'}}</td>
+                  <td style="white-space: nowrap;">{{car?.createdAt.timestamp * 1000 | date: 'yyyy-MM-dd'}}</td>
+                  <td style="white-space: nowrap;">{{car?.yearOfProduction.timestamp * 1000 | date: 'yyyy-MM-dd'}}</td>
                   <!-- <td>
                     <a (click)="suggest(car.id, (car.suggest ? false : true))"
                        class="text-primary mr-1 mb-1"

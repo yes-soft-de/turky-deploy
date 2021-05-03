@@ -2,7 +2,6 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import {forkJoin, Observable, Subscription} from 'rxjs';
 import { FooterComponent } from 'src/app/@theme/components';
 import { Cars } from '../products/model/cars';
-import { CarsResponse } from '../products/model/cars-response';
 import { Devices } from '../products/model/devices';
 import { RealEstate } from '../products/model/real-estate';
 import { ReportsResponse } from '../reports/model/reports-response';
@@ -10,6 +9,7 @@ import { Reports } from '../reports/model/reports.model';
 import {DashboardService} from './services/dashboard.service';
 import {StatisticsResponse} from './model/statistics-response';
 import {Statistic} from './model/statistic.model';
+import { CarsResponse } from '../cars/model/cars-response';
 
 @Component({
   selector: 'app-dashboard',

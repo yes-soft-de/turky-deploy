@@ -23,7 +23,7 @@
             <li>
               <div class="row">
                 <div class="col">
-                  <h4 class="text-info">{{carDetails?.company}}</h4>
+                  <h4 class="text-info">{{carDetails?.carType}}</h4>
                 </div>
                 <div class="col align-self-center text-right">
                   <span class="status border border-secondary rounded py-1 px-2">{{carDetails?.status}}</span>
@@ -40,7 +40,7 @@
                 </div>
               </div>
             </li>
-            <li *ngIf="carDetails?.carType"><p class="mb-2">{{'carType' | translate }} : <span class="text-secondary">{{carDetails?.carType}}</span></p></li>
+            <li *ngIf="carDetails?.gearType"><p class="mb-2">{{'gearType' | translate }} : <span class="text-secondary">{{carDetails?.gearType}}</span></p></li>
             <li *ngIf="carDetails?.country"><p class="mb-2">{{'country' | translate }} : <span class="text-secondary">{{carDetails?.country}}</span></p></li>
             <li *ngIf="carDetails?.price"><p class="mb-2">{{'price' | translate }} : <span class="text-secondary">{{carDetails?.price | currency}}</span></p></li>
             <li *ngIf="carDetails?.yearOfRelease"><p class="mb-2">{{'yearOfRelease' | translate }} : <span class="text-secondary">{{carDetails?.yearOfRelease.timestamp * 1000 | date: 'yyyy-MM-dd'}}</span></p></li>

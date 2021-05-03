@@ -46,6 +46,16 @@ const routes: Routes = [
         loadChildren: () => import('./chats/chats.module').then(m => m.ChatsModule),
         canActivate: [AfterLoginService]
       },
+      {
+        path: 'services',
+        loadChildren: () => import('./services/services.module').then(m => m.ServicesModule),
+        canActivate: [AfterLoginService]
+      },
+      {
+        path: 'categories',
+        loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesModule),
+        canActivate: [AfterLoginService]
+      },
       { path: '**', component: NotFoundComponent }
     ]
   }

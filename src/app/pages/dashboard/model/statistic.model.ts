@@ -8,10 +8,12 @@ export interface Statistic {
   };
   devices?: number;
   properties?: number;
+  services?: number;
   reactions?: {
     carReactions?: number;
     deviceReactions?: number;
     realEstateReactions?: number;
+    services?: number;
     total?: number;
   };
   realEstates?: number;

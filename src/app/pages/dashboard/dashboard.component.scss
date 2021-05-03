@@ -94,6 +94,7 @@
     .late_info {
       border-bottom:1px solid #ccc;
       padding:7px;
+      overflow: auto;
       &:nth-child(odd) {
         background: #eee
       }
@@ -181,6 +182,10 @@
   .home-stat .st_clients {
     background: #40407a
   }
+  .home-stat .st_services {
+    background: #2e6d97
+  }
+  
   .home-stat .stat div {
     float:right;
   }

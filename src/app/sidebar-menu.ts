@@ -24,7 +24,7 @@ export const SIDEBAR_MENU_ITEM: SidebarMenuItems[] = [
         title: 'Products',
         id: 'products',
         translate: 'products',
-        icon: 'fa fa-tags',
+        icon: 'fa fa-cubes',
         children: [
             {
                 title: 'All Products',
@@ -49,6 +49,24 @@ export const SIDEBAR_MENU_ITEM: SidebarMenuItems[] = [
         ]
     },
     {
+        title: 'Categories',
+        id: 'categories',
+        translate: 'categories',
+        icon: 'fa fa-tags',
+        children: [
+            {
+                title: 'All Categories',
+                translate: 'all-categories',
+                link: '/categories',
+            },
+            {
+                title: 'New Category',
+                translate: 'new-category',
+                link: '/categories/add',
+            }
+        ]
+    },
+    {
         title: 'Reports',
         translate: 'reports',
         icon: 'fa fa-files-o',
@@ -59,5 +77,11 @@ export const SIDEBAR_MENU_ITEM: SidebarMenuItems[] = [
       translate: 'chats',
       icon: 'fa fa-comments',
       link: '/chats'
+    },
+    {
+      title: 'Services',
+      translate: 'services',
+      icon: 'fa fa-audio-description',
+      link: '/services'
     }
 ];

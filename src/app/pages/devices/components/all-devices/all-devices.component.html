@@ -28,26 +28,25 @@
                     <td>{{'image' | translate}}</td>
                     <td>{{'username' | translate}}</td>
                     <td>{{'brand' | translate}}</td>
-                    <td>{{'cpu' | translate}}</td>
-                    <td>{{'ram' | translate}}</td>
-                    <td>{{'battery' | translate}}</td>
-                    <td>{{'price' | translate}}</td>
-                    <td>{{'country' | translate}}</td>
                     <td>{{'type' | translate}}</td>
-                    <td style="white-space: nowrap;">{{'yearOfRelease' | translate}}</td>
+                    <td>{{'description' | translate}}</td>
+                    <td>{{'country' | translate}}</td>
+                    <td>{{'city' | translate}}</td>
+                    <td>{{'price' | translate}}</td>
+                    <td>{{'createdAt' | translate}}</td>
                     <td>{{'control' | translate}}</td>
                 </tr>
                 <tr *ngFor="let device of devicesFilterList | paginate: config">
                   <td><img src="{{device?.image}}" alt="{{device.brand}} Image" class="img-thumbnail img-custom"></td>
-                  <td>{{device.userName ? device.userName : '-'}}</td>
-                  <td>{{device.brand ? device.brand : '-'}}</td>
-                  <td class="td-custom">{{device.cpu ? device.cpu : '-'}}</td>
-                  <td>{{device.ram ? device.ram : '-'}}</td>
-                  <td>{{device.battery ? device.battery : '-'}}</td>
-                  <td>{{device.price ? (device.price | currency) : '-'}}</td>
-                  <td>{{device.country ? device.country : '-'}}</td>
-                  <td>{{device.type ? device.type : '-'}}</td>
-                  <td style="white-space: nowrap;">{{device.yearOfRelease.timestamp * 1000 | date: 'yyyy-MM-dd'}}</td>
+                  <td>{{device?.userName ? device?.userName : '-'}}</td>
+                  <td>{{device?.brand ? device?.brand : '-'}}</td>
+                  <td>{{device?.type ? device?.type : '-'}}</td>
+                  <td class="td-custom">{{device?.description ? device?.description : '-'}}</td>
+                  <td>{{device?.country ? device?.country : '-'}}</td>
+                  <td>{{device?.city ? device?.city : '-'}}</td>
+                  <td>{{device?.price ? (device?.price | currency) : '-'}}</td>
+                  <td style="white-space: nowrap;">{{device?.createdAt.timestamp * 1000 | date: 'yyyy-MM-dd'}}</td>
+                  <!-- <td style="white-space: nowrap;">{{device.yearOfRelease.timestamp * 1000 | date: 'yyyy-MM-dd'}}</td> -->
                   <!-- <td>
                     <a (click)="suggest(device.id, (device.suggest ? false : true))"
                        class="text-primary mr-1 mb-1"

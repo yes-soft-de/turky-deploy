@@ -1,0 +1,60 @@
+<!-- general form elements -->
+<div class="container-fluid mb-5">
+    <div class="content-header mt-5 mb-4 text-center">
+        <h1>{{'update-category' | translate}}</h1>
+    </div>
+    <div class="card card-info">
+        <div class="card-header">
+            <!-- <h3 class="card-title">{{'add-new-category' | translate}}</h3> -->
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form [formGroup]="addCategoryForm" (ngSubmit)="onSubmit()">
+            <div class="card-body">
+                <div class="form-group">
+                    <label class="col-form-label" for="inputTypeSuccess">{{'lang' | translate}}</label>
+                    <select class="form-control"
+                            name="lang"
+                            formControlName="lang">
+                        <option value="">{{'select-lang-placeholder' | translate}}</option>
+                        <option value="en">{{'english' | translate}}</option>
+                        <option value="ar">{{'arabic' | translate}}</option>
+                        <option value="tr">{{'turkish' | translate}}</option>
+                    </select>
+                    <span class="invalid-feedback" *ngIf="addCategoryForm.get('lang').errors?.required">{{'lang-field-is-required' | translate}}</span>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="inputNameSuccess">{{'name' | translate}}</label>
+                    <input class="form-control"
+                           [ngClass]="{'is-invalid': addCategoryForm.get('name').errors &&
+                           (addCategoryForm.get('name').touched || addCategoryForm.get('name').dirty)}"
+                           type="text"
+                           name="name"
+                           id="inputNameSuccess"
+                           formControlName="name"
+                           placeholder="{{'name-type-placeholder' | translate}}">
+                    <span class="invalid-feedback" *ngIf="addCategoryForm.get('name').errors?.required">{{'name-field-is-required' | translate}}</span>                      
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputdescription1">{{'description' | translate}}</label>
+                    <textarea class="form-control"
+                           [ngClass]="{'is-invalid': addCategoryForm.get('description').errors &&
+                           (addCategoryForm.get('description').touched || addCategoryForm.get('description').dirty)}"
+                           name="description"
+                           formControlName="description"
+                           id="exampleInputdescription1"
+                           placeholder="{{'description-type-placeholder' | translate}}">
+                    </textarea>
+                    <span class="invalid-feedback" *ngIf="addCategoryForm.get('description').errors?.required">{{'descriptioon-field-is-required' | translate}}</span>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+            <button type="submit" class="btn btn-primary" [disabled]="addCategoryForm.invalid">{{'update' | translate}}</button>
+            </div>
+        </form>
+    </div>
+    <!-- /.card -->
+</div>

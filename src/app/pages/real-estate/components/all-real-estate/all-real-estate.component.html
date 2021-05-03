@@ -30,7 +30,7 @@
                   <td>{{'country' | translate}}</td>
                   <td>{{'real-estate-type' | translate}}</td>
                   <td>{{'number-of-floors' | translate}}</td>
-                  <td>{{'rooms' | translate}}</td>
+                  <!-- <td>{{'rooms' | translate}}</td> -->
                   <td>{{'city' | translate}}</td>
                   <td>{{'price' | translate}}</td>
                   <td>{{'createdAt' | translate}}</td>
@@ -42,7 +42,7 @@
                   <td>{{realEstate?.country ? realEstate?.country : '-'}}</td>
                   <td>{{realEstate?.realEstateType ? realEstate?.realEstateType : '-'}}</td>
                   <td>{{realEstate?.numberOfFloors ? realEstate?.numberOfFloors : '-'}}</td>
-                  <td>{{realEstate?.rooms ? realEstate?.rooms : '-'}}</td>
+                  <!-- <td>{{realEstate?.rooms ? realEstate?.rooms : '-'}}</td> -->
                   <td>{{realEstate?.city ? realEstate?.city : '-'}}</td>
                   <td>{{realEstate?.price ? (realEstate?.price | currency) : '-'}}</td>
                   <td style="white-space: nowrap;">{{realEstate?.createdAt?.timestamp * 1000 | date: 'MMM d, y, h:mm:ss a'}}</td>

@@ -1,0 +1,125 @@
+<div class="service-details" *ngIf="service">
+    <div class="container">
+      <h1 class="my-3 details-title">{{'service-details-page' | translate}}</h1>
+      <div class="row">
+        <div class="col-12 col-sm-5 col-md-4 position-relative mx-auto text-center mb-3">
+          <div class="image-details mb-3">
+            <img class="img-fluid img-thumbnail" src="{{service?.image}}" alt="{{service?.title}} Image" />
+          </div>
+  <!--        <div class="row w-100 mx-auto" *ngIf="service.images.length != 0">-->
+  <!--          <div class="col-4 mx-auto px-0 mb-1" *ngFor="let img of service.images; let i = index">-->
+  <!--            <div #secondImageDetails class="second-images-details"  (click)="viewImage(secondImageDetails)">-->
+  <!--              <img (load)="checkSecondImagesloaded(i)" class="img-responsive" src="{{img?.image}}" (error)="img.image = '../../../../../assets/default-Item.jpg'" alt="Second Images" />-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--        <div class="overlay" *ngIf="rendering">-->
+  <!--          <div class="overlay-lds-ring"><div></div><div></div><div></div><div></div></div>-->
+  <!--        </div>-->
+        </div>
+        <div class="col-12 col-sm-6 mx-auto">
+          <div class="info-details">
+            <ul class="list-unstyled">
+              <li>
+                <div class="row">
+                  <div class="col">
+                    <h4 class="text-info">{{service?.title}}</h4>
+                  </div>
+                  <!-- <div *ngIf="service?.status" class="col align-self-center text-right">
+                    <span class="status border border-secondary rounded py-1 px-2">{{service?.status | translate}}</span>
+                  </div> -->
+                </div>
+              </li>
+             <li class="my-2">
+               <div class="row">
+                 <div class="col-4 col-xl-3 text-center">
+                   <img class="img-fluid img-thumbnail" src="{{service?.userImage}}" alt="{{service?.userName}} Image" />
+                 </div>
+                 <div class="col-7 align-self-center">
+                   <h4 class="mb-2 text-secondary">{{service?.userName}}</h4>
+                 </div>
+               </div>
+             </li>
+  <!--              myOrders: [-->
+  <!--                {-->
+  
+  <!--              }-->
+  <!--              ];-->
+              <!-- <li class="mb-2" *ngIf="service?.language">
+                <p>{{'language' | translate }} :
+                  <span class="m-1 px-1 rounded bg-grey-blue text-white" *ngFor="let lang of service?.language">{{lang}}</span>
+                </p>
+              </li>
+              <li class="mb-2" *ngIf="service?.cities">
+                <p>{{'city' | translate }} :
+                  <span class="m-1 px-1 rounded border border-primary d-block" *ngFor="let city of service?.cities">{{city}}</span>
+                </p>
+              </li> -->
+  <!--            <li *ngIf="service?.regions">-->
+  <!--              <p class="mb-2">{{'regions' | translate }} :-->
+  <!--                <span class="{{region?.name ? 'm-1 px-1 rounded border border-primary' : null}}" *ngFor="let region of service?.regions">{{region?.name ? region?.name : null}}</span>-->
+  <!--              </p>-->
+  <!--            </li>-->
+              <li class="mb-2" *ngIf="service?.type"><p>{{'type' | translate }} : <span class="text-secondary">{{service?.type}}</span></p></li>
+              <li class="mb-2" *ngIf="service?.createdAt"><p>{{'createdAt' | translate }} : <span class="text-secondary">{{service?.createdAt.timestamp * 1000 | date}}</span></p></li>
+              <li class="mb-2" *ngIf="service?.updatedAt"><p>{{'updatedAt' | translate }} : <span class="text-secondary">{{service?.updatedAt.timestamp * 1000 | date}}</span></p></li>
+              <li class="mb-2" *ngIf="service?.description"><p>{{'description' | translate }} : <span class="text-secondary">{{service?.description}}</span></p></li>
+            </ul>
+          </div><!--.info-details-->
+        </div><!--.col-12-->
+        <div class="col-12">
+            <hr class="w-50 mx-auto">
+          </div>  
+          <div class="col-12" *ngIf="serviceCommentsList.length > 0">
+            <h3 class="">{{'comments' | translate}} :</h3>
+          </div>
+          <div class="card col-12 px-0" *ngIf="serviceCommentsList.length > 0">
+            <div class="card-header">
+              <!-- <h1 class="text-center details-title my-4">{{'manage-comment-page' | translate}}</h1> -->
+            </div>
+            <div class="card-body p-2">
+              <div class="messages-body my-3 pt-3 p-2">
+                <div class="comment-block" *ngFor="let comment of serviceCommentsList | paginate: config">
+                  <div class="row">
+                    <div class="col-2 col-lg-1 text-center pr-0 align-self-center">
+                      <div class="user-img">
+                        <img class="res-image"
+                            src="{{comment?.image ? comment?.image :  '../../../../../assets/default-avatar.jpg'}}"
+                            alt=""/>
+                      </div>
+                    </div>
+                    <div class="col-10 col-lg-11 mt-2 mt-sm-0">
+                      <div class="comment-body py-2 px-3">
+                        <div class="time">
+                          <span class="pb-1">{{comment?.userName}} {{comment?.createdAt != null ? '( ' + (comment?.createdAt.timestamp * 1000 | date: 'medium') + ' )' : ''}}</span>
+                        </div>
+                       <p class="comment m-0">
+                         {{comment?.comment}}
+                       </p>
+                      </div>
+                    </div>
+                  </div><!--.row-->
+                </div><!--.comment-block-->
+              </div><!--.messages-body-->
+            </div><!--.card-body-->
+            <div class="card-footer text-center">
+              <pagination-controls (pageChange)="pageChanged($event)"
+                                   autoHide="true"
+                                   maxSize="5"
+                                   responsive="true"
+                                   previousLabel="{{'prev' | translate}}"
+                                   nextLabel="{{'next' | translate}}"
+                                   screenReaderPaginationLabel="Pagination"
+                                   screenReaderPageLabel="page"
+                                   screenReaderCurrentLabel="{{'you-are-on-page' | translate}}">
+              </pagination-controls>
+            </div><!--.card-footer-->
+          </div><!--.card-->
+    
+      </div><!--.row-->
+    </div>
+  </div>
+  <div *ngIf="!service">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  </div>
+  

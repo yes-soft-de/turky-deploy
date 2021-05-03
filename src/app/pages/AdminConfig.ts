@@ -38,6 +38,15 @@ export class AdminConfig {
 
   // Statistics
   public static statisticsAPI               = AdminConfig.sourceAPI + 'statistics';
+  
+  // Services
+  public static allServicesAPI              = AdminConfig.sourceAPI + 'allservices';
+  public static servicesAPI                 = AdminConfig.sourceAPI + 'services';
+  
+  // Categories
+  public static categoriesAPI                = AdminConfig.sourceAPI + 'categories';
+  public static categoryAPI                  = AdminConfig.sourceAPI + 'category';
+
 
   // Upload
   public static generalUploadAPI            = AdminConfig.sourceAPI + 'uploadfile';

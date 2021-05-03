@@ -23,4 +23,5 @@ export interface Car {
   userImage?: string;
   username?: string;
   yearOfRelease?: { timestamp: number };
+  yearOfProduction?: { timestamp: number };
 }
